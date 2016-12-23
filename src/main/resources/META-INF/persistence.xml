@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="consultappPU"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<class>co.com.drillapp.consultapp.models.Subcategoria</class>
+		<class>co.com.drillapp.consultapp.models.Titulo</class>
+		<class>co.com.drillapp.consultapp.models.Mediopago</class>
+		<class>co.com.drillapp.consultapp.models.Archivo</class>
+		<class>co.com.drillapp.consultapp.models.CalificacionProfesional</class>
+		<class>co.com.drillapp.consultapp.models.Consulta</class>
+		<class>co.com.drillapp.consultapp.models.Cliente</class>
+		<class>co.com.drillapp.consultapp.models.Categoria</class>
+		<class>co.com.drillapp.consultapp.models.Profesional</class>
+		<class>co.com.drillapp.consultapp.models.CalificacionCliente</class>
+		<class>co.com.drillapp.consultapp.models.Transaccion</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:mysql://localhost:3306/consultapp?zeroDateTimeBehavior=convertToNull" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.password" value="Halcon1993" />
+		</properties>
+	</persistence-unit>
+</persistence>
